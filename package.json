@@ -1,6 +1,6 @@
 {
   "name": "bear-bus",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Dead simple events library",
   "keywords": [
     "events",
