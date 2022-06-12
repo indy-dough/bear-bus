@@ -1,6 +1,6 @@
 {
   "name": "bear-bus",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dead simple events library",
   "keywords": [
     "events",
@@ -14,6 +14,7 @@
   "files": ["dist/**/*"],
   "repository": "git@github.com:indy-dough/shot.git",
   "scripts": {
+    "prepare" : "yarn build",
     "build": "rm -rf dist && NODE_ENV=production babel index.js --out-dir dist --copy-files"
   },
   "devDependencies": {
