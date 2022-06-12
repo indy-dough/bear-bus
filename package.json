@@ -1,6 +1,6 @@
 {
   "name": "bear-bus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Dead simple events library",
   "keywords": [
     "events",
@@ -14,7 +14,7 @@
   "files": [
     "dist/**/*"
   ],
-  "repository": "git@github.com:indy-dough/shot.git",
+  "repository": "git@github.com:indy-dough/bear-bus.git",
   "scripts": {
     "format": "prettier -w .",
     "build": "rollup -c",
@@ -31,7 +31,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "terser": "^5.14.1"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+  "peerDependencies": {
+    "react": ">=16.8.0"
   }
 }
