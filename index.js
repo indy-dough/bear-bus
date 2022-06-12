@@ -1,8 +1,10 @@
 class Events {
-  events = {};
+  constructor() {
+    this.events = {};
+  }
 
   emit(eventName, ...args) {
-    this.events[eventName]?.forEach((callback) => callback(...args));
+    this.events[eventName]?.forEach(callback => callback(...args));
   }
 
   on(eventName, callback) {
@@ -14,9 +16,7 @@ class Events {
     if (!callback) {
       delete this.events[eventName];
     } else if (this.events[eventName]) {
-      this.events[eventName] = this.events[eventName].filter(
-        (fn) => fn !== callback
-      );
+      this.events[eventName] = this.events[eventName].filter(fn => fn !== callback);
     }
   }
 }
