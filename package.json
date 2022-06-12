@@ -1,6 +1,6 @@
 {
   "name": "bear-bus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dead simple events library",
   "keywords": [
     "events",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": false,
   "author": "Andrei Shevel <shevvy.az@gmail.com>",
-  "main": "index.js",
+  "main": "dist/index.js",
   "files": ["dist/**/*"],
   "repository": "git@github.com:indy-dough/shot.git",
   "scripts": {
