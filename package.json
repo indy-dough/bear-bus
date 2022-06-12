@@ -1,0 +1,26 @@
+{
+  "name": "bear-bus",
+  "version": "0.0.1",
+  "description": "Dead simple events library",
+  "keywords": [
+    "events",
+    "library",
+    "bus"
+  ],
+  "license": "MIT",
+  "private": false,
+  "author": "Andrei Shevel <shevvy.az@gmail.com>",
+  "main": "index.js",
+  "repository": "git@github.com:indy-dough/shot.git",
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel index.js --out-dir dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
