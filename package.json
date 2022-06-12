@@ -1,6 +1,6 @@
 {
   "name": "bear-bus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dead simple events library",
   "keywords": [
     "events",
@@ -11,6 +11,7 @@
   "private": false,
   "author": "Andrei Shevel <shevvy.az@gmail.com>",
   "main": "index.js",
+  "files": ["dist/**/*"],
   "repository": "git@github.com:indy-dough/shot.git",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel index.js --out-dir dist --copy-files"
