@@ -10,7 +10,8 @@
   "license": "MIT",
   "private": false,
   "author": "Andrei Shevel <shevvy.az@gmail.com>",
-  "main": "dist/index.min.js",
+  "unpkg": "dist/index.min.js",
+  "main": "dist/index.js",
   "files": [
     "dist/**/*"
   ],
@@ -30,6 +31,7 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@testing-library/react": "^13.3.0",
     "babel-jest": "^28.1.1",
+    "fcl": "^1.0.3",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "prettier": "^2.6.2",
