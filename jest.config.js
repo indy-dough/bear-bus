@@ -1,5 +1,4 @@
 module.exports = {
-  testEnvironment: 'jsdom',
   globals: {
     'babel-jest': {
       extends: './babel.config.js',

@@ -16,5 +16,4 @@ export default {
     },
   ],
   plugins: [resolve(), babel({ babelHelpers: 'bundled' })],
-  external: ['react'],
 };
