@@ -10,6 +10,16 @@ describe('Events', () => {
     expect(callback).toHaveBeenCalledTimes(1);
   });
 
+  it('should handle callback with arguments', () => {
+    const events = new Events();
+    const callback = jest.fn();
+
+    events.on('test', callback);
+    events.emit('test', 1, 2, 3);
+    expect(callback).toHaveBeenCalledTimes(1);
+    expect(callback).toHaveBeenCalledWith(1, 2, 3);
+  });
+
   it('should not handle callback', () => {
     const events = new Events();
     const callback = jest.fn();
